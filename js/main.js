@@ -1,14 +1,15 @@
 'use strict'
 
 const searchBtn = document.querySelector('.header__rightBar_search');
-// console.log(searchBtn);
 const blockInput = document.querySelector('.header__rightBar_items');
 
 const addSearchInput = () => {
+
    const newBlock = document.createElement('input');
    newBlock.classList.add('search-input');
    blockInput.prepend(newBlock);
    newBlock.placeholder = `Search`;
+
 }
 
 searchBtn.addEventListener('click', () => {
@@ -26,5 +27,7 @@ const menuHide = document.querySelector('.nav__items');
 const menuOldClass = document.querySelectorAll('.nav__item');
 
 menuBurger.addEventListener('click', () => {
+
    menuHide.classList.toggle('responsive_menu');
+
 })
